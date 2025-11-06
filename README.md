@@ -1,1 +1,5 @@
-# solar-challenge-week0
+# Solar Challenge Week 0
+
+## Setup
+
+1. Clone repo:
