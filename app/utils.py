@@ -9,10 +9,7 @@ from functools import lru_cache
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
-
-# ------------------------
 # Data Loading & Caching
-# ------------------------
 @lru_cache(maxsize=1)
 def load_data():
     """
@@ -45,10 +42,8 @@ def load_data():
     merged_df = pd.concat(dataframes, ignore_index=True)
     return merged_df
 
-
-# ------------------------
 # Statistics Calculation
-# ------------------------
+
 def calculate_statistics(df, metric):
     """
     Calculate professional summary statistics for a given metric, grouped by country.
@@ -73,10 +68,8 @@ def calculate_statistics(df, metric):
     stats_df = pd.DataFrame(stats_list)
     return stats_df
 
-
-# ------------------------
 # Statistical Testing
-# ------------------------
+
 def perform_statistical_tests(df, countries, metrics=['GHI', 'DNI', 'DHI']):
     """
     Perform ANOVA or Kruskal-Wallis test for each metric across selected countries.
@@ -137,10 +130,7 @@ def perform_statistical_tests(df, countries, metrics=['GHI', 'DNI', 'DHI']):
     
     return results
 
-
-# ------------------------
 # Country Ranking
-# ------------------------
 def get_country_ranking(df, metric='GHI', ascending=False):
     """
     Rank countries based on average value of the selected solar metric.
@@ -149,20 +139,15 @@ def get_country_ranking(df, metric='GHI', ascending=False):
     ranking = df.groupby('Country')[metric].mean().sort_values(ascending=ascending)
     return ranking
 
-
-# ------------------------
 # Filtering Helper
-# ------------------------
 def filter_by_country(df, countries):
     """
     Filter dataframe for selected countries.
     """
     return df[df['Country'].isin(countries)]
 
-
-# ------------------------
 # Normalized Radar Chart Data
-# ------------------------
+
 def prepare_radar_data(df, metrics=['GHI', 'DNI', 'DHI']):
     """
     Normalize metrics for radar chart visualization.
@@ -172,10 +157,8 @@ def prepare_radar_data(df, metrics=['GHI', 'DNI', 'DHI']):
     normalized = (avg_metrics - avg_metrics.min()) / (avg_metrics.max() - avg_metrics.min())
     return normalized
 
-
-# ------------------------
 # Quick Insights
-# ------------------------
+
 def quick_insights(df):
     """
     Return dictionary of top-performing countries for key solar metrics.
