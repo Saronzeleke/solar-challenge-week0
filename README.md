@@ -1,38 +1,22 @@
-# Solar Challenge – Week 0  
-**Saron Zeleke** | Analytics Engineer Candidate  
-*MoonLight Energy Solutions – Data-Driven Solar Strategy*
+# Solar Challenge Week 0
 
-## Project Overview
+## Setup
 
-This repository completes **Task 1: Git & Environment Setup** and lays the foundation for **Task 2: EDA & Regional Solar Ranking**. It enables **reproducible, CI-tested analysis** of solar irradiance data from **Benin, Sierra Leone, and Togo** to identify **high-potential regions** for sustainable solar investment.
+1. Clone repo:
 
+  git clone [<repo-url>](https://github.com/Saronzeleke/solar-challenge-week0.git)
 
+  cd solar-challenge-week0
 
-## Repository Structure
+2. Create virtual environment:
 
-```bash
-solar-challenge-week0/
-├── .vscode/                # IDE configuration
-│   └── settings.json
-├── .github/
-│   └── workflows/
-│       └── ci.yml          # GitHub Actions CI
-├── src/                    # Models & utilities
-├── notebooks/              # EDA notebooks
-├── tests/                  # Unit tests
-├── scripts/                # Data pipelines
-├── data/                   # Raw/cleaned data (gitignored)
-├── .gitignore
-├── requirements.txt
-├── README.md               # This file
-└── LICENSE
+  python3 -m venv venv
 
-Task 1: Git & Environment Setup (Completed)
-Requirement,Status,Details
-Repo,Done,solar-challenge-week0
-Branch,Done,setup-task → merged
-3+ Commits,Done,".gitignore, requirements, CI"
-.gitignore,Done,"data/, venv/, .ipynb_checkpoints"
-CI Pipeline,Done,"Installs deps, runs tests"
-Folder Structure,Done,As specified
-PR Merged,Done,#1
+  venv is the name of the environment
+
+  source venv/bin/activate # or venv\Scripts\activate on Windows
+
+3. Install dependencies:
+
+   pip install -r requirements.txt
+ 
