@@ -1,22 +1,28 @@
-# Solar Challenge Week 0
+# Solar Challenge – Week 0  
+**Saron Zeleke** | Analytics Engineer Candidate  
+*MoonLight Energy Solutions – Data-Driven Solar Strategy*
 
-## Setup
+## Project Overview
 
-1. Clone repo:
+This repository completes **Task 1: Git & Environment Setup** and lays the foundation for **Task 2: EDA & Regional Solar Ranking**. It enables **reproducible, CI-tested analysis** of solar irradiance data from **Benin, Sierra Leone, and Togo** to identify **high-potential regions** for sustainable solar investment.
 
-  git clone [<repo-url>](https://github.com/Saronzeleke/solar-challenge-week0.git)
 
-  cd solar-challenge-week0
 
-2. Create virtual environment:
+## Repository Structure
 
-  python3 -m venv venv
-
-  venv is the name of the environment
-
-  source venv/bin/activate # or venv\Scripts\activate on Windows
-
-3. Install dependencies:
-
-   pip install -r requirements.txt
- 
+```bash
+solar-challenge-week0/
+├── .vscode/                # IDE configuration
+│   └── settings.json
+├── .github/
+│   └── workflows/
+│       └── ci.yml          # GitHub Actions CI
+├── src/                    # Models & utilities
+├── notebooks/              # EDA notebooks
+├── tests/                  # Unit tests
+├── scripts/                # Data pipelines
+├── data/                   # Raw/cleaned data (gitignored)
+├── .gitignore
+├── requirements.txt
+├── README.md               # This file
+└── LICENSE
