@@ -17,9 +17,9 @@ def load_data():
     Caches the result to improve performance for Streamlit.
     """
     data_files = {
-        'Benin': 'data/benin_clean.csv',
-        'Sierra Leone': 'data/sierra_leone_clean.csv', 
-        'Togo': 'data/togo_clean.csv'
+        'Benin':r'C:\Users\admin\solar-challenge-week0\data\benin-malanville_clean.csv',
+        'Sierra Leone':r'C:\Users\admin\solar-challenge-week0\data\sierraleone-bumbuna_clean.csv', 
+        'Togo': r'C:\Users\admin\solar-challenge-week0\data\togo-dapaong_qc_clean.csv'
     }
     
     dataframes = []
