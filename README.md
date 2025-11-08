@@ -26,3 +26,13 @@ solar-challenge-week0/
 ├── requirements.txt
 ├── README.md               # This file
 └── LICENSE
+
+Task 1: Git & Environment Setup (Completed)
+Requirement,Status,Details
+Repo,Done,solar-challenge-week0
+Branch,Done,setup-task → merged
+3+ Commits,Done,".gitignore, requirements, CI"
+.gitignore,Done,"data/, venv/, .ipynb_checkpoints"
+CI Pipeline,Done,"Installs deps, runs tests"
+Folder Structure,Done,As specified
+PR Merged,Done,#1
