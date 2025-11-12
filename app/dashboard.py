@@ -18,9 +18,9 @@ st.set_page_config(
 # Load data
 @st.cache_data
 def load_data():
-    benin = pd.read_csv('data/processed/benin_cleaned.csv')
-    sierra_leone = pd.read_csv('data/processed/sierra_leone_cleaned.csv')
-    togo = pd.read_csv('data/processed/togo_cleaned.csv')
+    benin = pd.read_csv(r'C:\Users\admin\solar-challenge-week0\data\benin-malanville_clean.csv')
+    sierra_leone = pd.read_csv(r'C:\Users\admin\solar-challenge-week0\data\sierraleone-bumbuna_clean.csv')
+    togo = pd.read_csv(r'C:\Users\admin\solar-challenge-week0\data\togo-dapaong_qc_clean.csv')
     
     # Add country identifiers
     benin['Country'] = 'Benin'
