@@ -1,145 +1,129 @@
-<<<<<<< HEAD
-## 🌞 Solar Challenge Week 0
+# Solar Data Analysis Challenge
 
-## 📘 Project Overview
-=======
-# Solar Challenge Week 0
-## Task 1:
-## Setup
->>>>>>> eda-togo
+## Project Overview
+Comprehensive analysis of solar irradiation data for Benin, Sierra Leone, and Togo. This project includes data 
 
-This project focuses on analyzing solar farm data from Benin, Sierra Leone, and Togo to extract meaningful insights and identify high-potential regions for solar energy installation.
-It is part of the 10 Academy Week 0 Challenge, designed to assess candidates’ skills in Data Engineering, Financial Analytics, and Machine Learning Engineering.
+profiling, cleaning, exploratory analysis, and cross-country comparison of solar energy potential.
 
-## 🧠 Objectives
+## 📁 Repository Structure
 
-Perform data cleaning, profiling, and exploratory data analysis (EDA).
+solar-challenge-week0/
 
-Understand environmental and solar measurement patterns (GHI, DNI, DHI, temperature, humidity, wind, etc.).
+├── .github/workflows/ci.yml # GitHub Actions CI/CD
 
-Derive data-driven insights that support sustainable solar energy strategies.
+├── app/dashboard.py # Streamlit dashboard
 
-Showcase version control, collaboration, and CI/CD setup through GitHub workflows.
+├── data/
 
-## ⚙️ Setup Instructions
+│ ├── raw/ # Original datasets
 
-## 1️⃣ Clone Repository
+├── notebooks/
 
-<<<<<<< HEAD
+│ ├── 1-benin-analysis.ipynb # Benin EDA
+
+│ ├── 2-sierra-leone-analysis.ipynb # Sierra Leone EDA
+
+│ ├── 3-togo-analysis.ipynb # Togo EDA
+
+│ └── 4-cross-country-comparison.ipynb # Comparative analysis
+
+├── scripts/ # Utility scripts
+
+├── tests/ # Test files
+
+├── .gitignore
+
+├── requirements.txt
+
+└── README.md
+
+## 🚀 Setup Instructions
+
+## Prerequisites
+- Python 3.8+
+
+- Git
+
+## Installation
+
+## 1. Clone the repository:
+
+
 git clone https://github.com/Saronzeleke/solar-challenge-week0.git
 
 cd solar-challenge-week0
 
-## 2️⃣ Create Virtual Environment
+## 2. Create and activate virtual environment:
 
-python3 -m venv venv
+python -m venv my_env
 
-# Activate environment
+# Windows:
 
-source venv/bin/activate  # (Linux/Mac)
+my_env\Scripts\activate
 
-venv\Scripts\activate     # (Windows)
+# Linux/Mac:
 
+source my_env/bin/activate 
 
-## 3️⃣ Install Dependencies
+## 3. Install dependencies:
 
 pip install -r requirements.txt
 
-## 4️⃣ Folder Structure
+## 4.Launch Jupyter for analysis:
 
+jupyter notebook
 
-solar-challenge-week0/
-│
-├── .github/
-│   └── workflows/
-│       └── ci.yml
-│
-├── notebooks/
-│   ├── benin_eda.ipynb
-│   ├── togo_eda.ipynb
-│   ├── sierra_leone_eda.ipynb
-│
-├── scripts/
-│   ├── cleaning.py
-│   ├── eda_utils.py
-│   ├── visualization.py
-│
-├── tests/
-│   └── test_cleaning.py
-│
-├── requirements.txt
-├── .gitignore
-└── README.md
+## Usage
 
-## 📊 Key Performance Indicators (KPIs)
+Data Analysis
 
-## Category	                   KPI	                                     Description
+Open notebooks in order (1-4) for complete analysis
 
-**Environment Setup           ✅ Git & venv configured        Repository initialized with CI workflow and requirements**
+Each notebook includes data profiling, cleaning, and visualization
 
-**Version Control	            ✅ Frequent commits	             Clear and descriptive commit messages using Git branches**
+Cross-country comparison in notebook 4
 
-**EDA & Cleaning	         ✅ Data profiling completed	Summary stats,  missing values, and outlier detection implemented**
+## Dashboard
 
-**Visualization & Insights	✅ Meaningful plots	     Clear time-series, correlation heatmaps, and trend visualizations**
+streamlit run app/dashboard.py
 
-**Documentation	            ✅ Professional README	       Steps to reproduce, objectives, and structure well explained**
+## 📊 Analysis Workflow
 
-**Proactivity	            ✅ Self-learning & clarity	      Use of proper statistical and visualization techniques**
+Data Profiling: Summary statistics, missing values, data types
 
-**CI/CD Workflow         ✅ GitHub Actions setup                    Automated test or installation pipeline included**
+Data Cleaning: Outlier detection (Z-score > 3), missing value handling
 
+Exploratory Analysis: Time series, correlations, distributions
 
+Cross-Country Comparison: Statistical tests, visual comparisons
 
-## 🧩 Tools & Technologies
+## 🔬 Key Features
 
-Python (Pandas, NumPy, Matplotlib, Seaborn)
+Comprehensive EDA for each country
 
-Git & GitHub
+Statistical significance testing (ANOVA/Kruskal-Wallis)
 
-CI/CD using GitHub Actions
+Interactive Streamlit dashboard
 
-Streamlit (for dashboard creation)
+Automated CI/CD with GitHub Actions
 
-Jupyter Notebooks
+Modular, reproducible analysis
 
-## 🧾 Author
+## 📈 Key Findings
 
-**Saron Zeleke**
+[Add your specific findings after running the analysis]
 
-📧 [Sharonkuye369@gmail.com]
+## 🤝 Contributing
 
+Create feature branch: git checkout -b feature/analysis
 
-🔗 GitHub Profile
-=======
-   pip install -r requirements.txt
+Commit changes: git commit -m "Add feature"
 
-## Task 2: Data Profiling, Cleaning & EDA
+Push branch: git push origin feature/analysis
 
-This section covers exploratory data analysis for solar datasets from **Benin**, **Sierra Leone**, and **Togo**.  
+Create Pull Request
 
-Each analysis was conducted on separate branches (`eda-benin`, `eda-sierra_leone`, `eda-togo`) and saved in individual 
+## 📄 License
 
-notebooks.
+MIT License - see LICENSE file for details 
 
-### Key steps performed
-
-- Summary statistics and missing value profiling
-
-- Outlier detection using Z-score
-
-- Data cleaning with median imputation
-
-- Temporal trend analysis (GHI, DNI, DHI, Tamb)
-
-- Cleaning impact visualization on module efficiency
-
-- Correlation and scatter analysis
-
-- Wind rose, distribution, and bubble plots
-
-- Statistical measures: skewness and kurtosis
-
-All cleaned datasets are stored locally under `/data` and excluded from Git tracking.
-
->>>>>>> eda-togo
