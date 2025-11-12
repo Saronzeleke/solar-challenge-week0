@@ -17,3 +17,8 @@ data/raw/
 *.xlsx
 *.db
 *.sqlite
+*.py[cod]
+*.so
+*.egg-info/
+my_env/
+data/
