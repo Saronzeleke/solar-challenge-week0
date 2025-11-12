@@ -1,16 +1,24 @@
-# Python
-__pycache__/
+﻿__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.env
+.ipynb_checkpoints/
+.DS_Store
+*.sqlite3
+*.log
+data/raw/
+*.ipynb
+*.csv
+*.xlsx
+*.db
+*.sqlite
 *.py[cod]
 *.so
 *.egg-info/
-My_env/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# Data
+my_env/
 data/
-*.csv
-
-# VS Code
-.vscode/
