@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ﻿__pycache__/
-=======
-﻿﻿__pycache__/
->>>>>>> main
 *.pyc
 *.pyo
 *.pyd
