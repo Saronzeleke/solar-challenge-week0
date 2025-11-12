@@ -16,17 +16,17 @@ solar-challenge-week0/
 
 ├── data/
 
-│ ├── raw/ # Original datasets
+       ├── raw/ # Original datasets
 
 ├── notebooks/
 
-│ ├── 1-benin-analysis.ipynb # Benin EDA
+       ├── 1-benin-analysis.ipynb # Benin EDA
 
-│ ├── 2-sierra-leone-analysis.ipynb # Sierra Leone EDA
+       ├── 2-sierra-leone-analysis.ipynb # Sierra Leone EDA
 
-│ ├── 3-togo-analysis.ipynb # Togo EDA
+       ├── 3-togo-analysis.ipynb # Togo EDA
 
-│ └── 4-cross-country-comparison.ipynb # Comparative analysis
+       └── 4-cross-country-comparison.ipynb # Comparative analysis
 
 ├── scripts/ # Utility scripts
 
