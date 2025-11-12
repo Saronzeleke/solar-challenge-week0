@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> eda-togo
 import pandas as pd
 import numpy as np
 from scipy import stats
 
+<<<<<<< HEAD
 def clean_numeric(df, numeric_cols, z_thresh=3):
     """
     Clean numeric columns:
@@ -45,3 +49,10 @@ def detect_high_missing(df, threshold=5):
     """
     high_missing = (df.isna().mean() * 100)[(df.isna().mean() * 100) > threshold]
     return high_missing
+=======
+def clean_solar_data(df, numeric_cols):
+    z_scores = np.abs(stats.zscore(df[numeric_cols]))
+    df_clean = df[~(z_scores > 3).any(axis=1)].copy()
+    df_clean[numeric_cols] = df_clean[numeric_cols].fillna(df_clean[numeric_cols].median())
+    return df_clean
+>>>>>>> eda-togo

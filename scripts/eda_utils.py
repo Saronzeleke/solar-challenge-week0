@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import pandas as pd
 from scipy.stats import skew, kurtosis
@@ -23,3 +24,18 @@ def compute_skew_kurtosis(df, cols):
 def correlation_matrix(df, cols):
     """Return correlation matrix for selected columns."""
     return df[cols].corr()
+=======
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+def plot_correlation(df, cols):
+    sns.heatmap(df[cols].corr(), annot=True, cmap='coolwarm')
+    plt.show()
+
+def plot_time_series(df, cols, timestamp_col='Timestamp'):
+    plt.figure(figsize=(12,6))
+    for col in cols:
+        plt.plot(df[timestamp_col], df[col], label=col)
+    plt.legend()
+    plt.show()
+>>>>>>> eda-togo

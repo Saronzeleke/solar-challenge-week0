@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 ## 🌞 Solar Challenge Week 0
 
 ## 📘 Project Overview
+=======
+# Solar Challenge Week 0
+## Task 1:
+## Setup
+>>>>>>> eda-togo
 
 This project focuses on analyzing solar farm data from Benin, Sierra Leone, and Togo to extract meaningful insights and identify high-potential regions for solar energy installation.
 It is part of the 10 Academy Week 0 Challenge, designed to assess candidates’ skills in Data Engineering, Financial Analytics, and Machine Learning Engineering.
@@ -19,6 +25,7 @@ Showcase version control, collaboration, and CI/CD setup through GitHub workflow
 
 ## 1️⃣ Clone Repository
 
+<<<<<<< HEAD
 git clone https://github.com/Saronzeleke/solar-challenge-week0.git
 
 cd solar-challenge-week0
@@ -104,3 +111,35 @@ Jupyter Notebooks
 
 
 🔗 GitHub Profile
+=======
+   pip install -r requirements.txt
+
+## Task 2: Data Profiling, Cleaning & EDA
+
+This section covers exploratory data analysis for solar datasets from **Benin**, **Sierra Leone**, and **Togo**.  
+
+Each analysis was conducted on separate branches (`eda-benin`, `eda-sierra_leone`, `eda-togo`) and saved in individual 
+
+notebooks.
+
+### Key steps performed
+
+- Summary statistics and missing value profiling
+
+- Outlier detection using Z-score
+
+- Data cleaning with median imputation
+
+- Temporal trend analysis (GHI, DNI, DHI, Tamb)
+
+- Cleaning impact visualization on module efficiency
+
+- Correlation and scatter analysis
+
+- Wind rose, distribution, and bubble plots
+
+- Statistical measures: skewness and kurtosis
+
+All cleaned datasets are stored locally under `/data` and excluded from Git tracking.
+
+>>>>>>> eda-togo
