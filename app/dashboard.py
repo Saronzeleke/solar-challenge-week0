@@ -34,7 +34,7 @@ def load_data():
 
 # Main app
 def main():
-    st.title("🌍 West Africa Solar Data Analysis Dashboard")
+    st.title("🌍  Africa Solar Data Analysis Dashboard")
     st.markdown("Interactive exploration of solar irradiation data for Benin, Sierra Leone, and Togo")
     
     # Load data
