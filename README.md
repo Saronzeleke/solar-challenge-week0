@@ -1,6 +1,7 @@
 # Solar Data Analysis Challenge
 
 ## Project Overview
+
 Comprehensive analysis of solar irradiation data for Benin, Sierra Leone, and Togo. This project includes data 
 
 profiling, cleaning, exploratory analysis, and cross-country comparison of solar energy potential.
@@ -111,7 +112,9 @@ Modular, reproducible analysis
 
 ## 📈 Key Findings
 
-[Add your specific findings after running the analysis]
+Benin demonstrates superior solar potential with the highest GHI and DNI values, while all three West African nations 
+
+show statistically significant seasonal patterns ideal for strategic solar energy deployment.
 
 ## 🤝 Contributing
 
